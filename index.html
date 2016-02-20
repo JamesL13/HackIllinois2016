@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <script>
+      $.getJSON( "MOCK_DATA.json", function( data ) {
+      var items = [];
+        items.push("<thead> <tr> <th>Id</th> <th>Latitude</th> <th>Longitude</th> <th>Business</th> <th>Amount</th> </tr> </thead>");// + "<th>First Name</th>");
+      $.each( data, function( key, val ) {
+        items.push("<tr>");
+        items.push( "<td> " + val.id + "</td");
+        items.push("</tr>");
+        items.push( "<td> " + val.latitude + "</td>");
+        items.push( "<td> " + val.longitude + "</td>");
+        items.push( "<td> " + val.business + "</td>");
+        items.push( "<td> " + val.amount + "</td>");
+      });
+      $( "<table/>", {
+      "class": "table",
+      html: items.join( "" )
+      }).appendTo( "body" );
+    });
+  </script>
+
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 60%; width: 50%; margin: auto 0; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script type="text/javascript">
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7NzdjQoekhKrAU_BD1iGb3KLmMPJDJZY&callback=initMap">
+    </script>
+</body>
+</html>
