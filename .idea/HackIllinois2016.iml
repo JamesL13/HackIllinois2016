@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/ani-theme-master/dist" />
       <excludeFolder url="file://$MODULE_DIR$/ani-theme-master/examples" />
+      <excludeFolder url="file://$MODULE_DIR$/ani-theme-master/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/ani-theme-master/test" />
     </content>
     <orderEntry type="inheritedJdk" />

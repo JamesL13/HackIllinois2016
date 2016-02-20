@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5efc0b72-8ab2-414a-9299-619d1a4aeec2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/images/flat-avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/scripts/oldieshim.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/scripts/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/scripts/vendor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/styles/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/views/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/views/dashboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/views/dashboard/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/views/dashboard/reports.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/views/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ani-theme-master/dist/views/main-content.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/HackIllinois2016.iml" afterPath="$PROJECT_DIR$/.idea/HackIllinois2016.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HackIllinois2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ani-theme-master/app/scripts/controllers/login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -53,10 +70,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ani-theme-master/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.85106385">
+              <caret line="161" column="3" selection-start-line="161" selection-start-column="3" selection-end-line="161" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ani-theme-master/gulpfile.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
@@ -123,6 +159,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ani-theme-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackIllinois2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackIllinois2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ani-theme-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,6 +300,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ani-theme-master/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85106385">
+          <caret line="161" column="3" selection-start-line="161" selection-start-column="3" selection-end-line="161" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
