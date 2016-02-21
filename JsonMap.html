@@ -42,10 +42,26 @@
             center: {lat: 41.8369, lng: -87.6847},
             zoom: 10
           });
+
+          var heatMapData = [];
+          $.getJSON( "MOCK_DATA.json", function( data ) {
+              $.each(data,function(key,val){
+                  var temp = new google.maps.LatLng(val.latitude,val.longitude);
+                  //console.log(val.latitude);
+                  console.log(temp);
+                  heatMapData.push(new google.maps.LatLng(val.latitude,val.longitude));
+              });
+          });
+
+          heatMap = new google.maps.visualization.HeatmapLayer({
+            data: heatMapData,
+            map: map
+          });
+          heatMap.setMap(map);
         }
     </script>
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7NzdjQoekhKrAU_BD1iGb3KLmMPJDJZY&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7NzdjQoekhKrAU_BD1iGb3KLmMPJDJZY&callback=initMap&libraries=visualization">
     </script>
 </body>
 </html>
