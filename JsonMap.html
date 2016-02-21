@@ -67,13 +67,14 @@
       $('body').on("click", "table tr", function(){
           var lati = $(this).find('td:nth-child(2)').text();
           var long = $(this).find('td:nth-child(3)').text();
+          var dolla = $(this).find('td:nth-child(5)').text();
           //alert('You clicked ' + lat + " " + long);
           var center = new google.maps.LatLng(lati, long);
           //var myLatlng = new google.maps.LatLng(lati,long);
           var marker = new google.maps.Marker({
             position: center,
             map: map,
-            title: 'hi'
+            title: dolla
           });
     // using global variable:
           map.panTo(center);
