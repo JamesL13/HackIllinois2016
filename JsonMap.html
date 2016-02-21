@@ -7,6 +7,11 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/the-big-picture.css" rel="stylesheet">
+    <style>
+        tr.dataRow{
+            cursor: pointer
+        }
+    </style>
 </head>
 <body>
 
@@ -15,7 +20,7 @@
       var items = [];
         items.push("<thead> <tr> <th>Id</th> <th>Latitude</th> <th>Longitude</th> <th>Business</th> <th>Amount</th> </tr> </thead> <tbody>");// + "<th>First Name</th>");
       $.each( data, function( key, val ) {
-        items.push("<tr>");
+        items.push("<tr class=dataRow>");
         items.push( "<td> " + val.id + "</td>");
         items.push( "<td> " + val.latitude + "</td>");
         items.push( "<td> " + val.longitude + "</td>");
