@@ -65,10 +65,16 @@
 
     <script type="text/javascript">
       $('body').on("click", "table tr", function(){
-          var lat = $(this).find('td:nth-child(2)').text();
+          var lati = $(this).find('td:nth-child(2)').text();
           var long = $(this).find('td:nth-child(3)').text();
           //alert('You clicked ' + lat + " " + long);
-          var center = new google.maps.LatLng(lat, long);
+          var center = new google.maps.LatLng(lati, long);
+          //var myLatlng = new google.maps.LatLng(lati,long);
+          var marker = new google.maps.Marker({
+            position: center,
+            map: map,
+            title: 'hi'
+          });
     // using global variable:
           map.panTo(center);
           map.setZoom(15);
