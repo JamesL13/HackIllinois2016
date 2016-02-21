@@ -13,15 +13,15 @@
     <script>
       $.getJSON( "MOCK_DATA.json", function( data ) {
       var items = [];
-        items.push("<thead> <tr> <th>Id</th> <th>Latitude</th> <th>Longitude</th> <th>Business</th> <th>Amount</th> </tr> </thead>");// + "<th>First Name</th>");
+        items.push("<thead> <tr> <th>Id</th> <th>Latitude</th> <th>Longitude</th> <th>Business</th> <th>Amount</th> </tr> </thead> <tbody>");// + "<th>First Name</th>");
       $.each( data, function( key, val ) {
         items.push("<tr>");
-        items.push( "<td> " + val.id + "</td");
-        items.push("</tr>");
+        items.push( "<td> " + val.id + "</td>");
         items.push( "<td> " + val.latitude + "</td>");
         items.push( "<td> " + val.longitude + "</td>");
         items.push( "<td> " + val.business + "</td>");
         items.push( "<td> " + val.amount + "</td>");
+        items.push("</tr>");
       });
       $( "<table/>", {
       "class": "table",
@@ -34,13 +34,15 @@
       html, body { height: 100%; margin: 0; padding: 0; }
       #map { height: 80%; width: 100%; margin: auto 0; position: static;}
     </style>
+
     <div id="map"></div>
+
     <script type="text/javascript">
         var map;
         function initMap() {
           map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 41.8369, lng: -87.6847},
-            zoom: 10
+            center: {lat: 41.8969, lng: -87.6847},
+            zoom: 12
           });
 
           var heatMapData = [];
@@ -48,7 +50,7 @@
               $.each(data,function(key,val){
                   var temp = new google.maps.LatLng(val.latitude,val.longitude);
                   //console.log(val.latitude);
-                  console.log(temp);
+                  //console.log(temp);
                   heatMapData.push(new google.maps.LatLng(val.latitude,val.longitude));
               });
           });
@@ -60,6 +62,19 @@
           heatMap.setMap(map);
         }
     </script>
+
+    <script type="text/javascript">
+      $('body').on("click", "table tr", function(){
+          var lat = $(this).find('td:nth-child(2)').text();
+          var long = $(this).find('td:nth-child(3)').text();
+          //alert('You clicked ' + lat + " " + long);
+          var center = new google.maps.LatLng(lat, long);
+    // using global variable:
+          map.panTo(center);
+          map.setZoom(15);
+});
+    </script>
+
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7NzdjQoekhKrAU_BD1iGb3KLmMPJDJZY&callback=initMap&libraries=visualization">
     </script>
